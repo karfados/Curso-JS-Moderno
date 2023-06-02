@@ -22,3 +22,8 @@ switch (metodoDePago) {
     console.log("No hay metodo de pago!");
     break;
 }
+
+/**
+ * Ten encuaneta que un case puede ejecutan cualquier tipo de 
+ * codigo en su interior!!
+ */
