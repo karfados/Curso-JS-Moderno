@@ -43,5 +43,7 @@ resultado=[...resultado,producto2];
 resultado=[producto3,...resultado];
 
 // Estado del carrito
+console.log("------------------Carrito sin cambios-------------------")
 console.table(carrito);
+console.log("------------------Arreglo con cambios-------------------")
 console.table(resultado);

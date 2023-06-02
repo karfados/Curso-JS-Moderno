@@ -22,3 +22,5 @@ console.log(Object.values(producto));
 
 // Metodo para mostrar todos los datos juntos en forma de arreglos pares:
 console.log(Object.entries(producto));
+
+console.log(Object.keys(producto));
