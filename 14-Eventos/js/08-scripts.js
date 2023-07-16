@@ -13,7 +13,13 @@ parrafo2.classList.add('titulo');
 const parrafo3 = document.createElement('p');
 parrafo3.textContent = '$800 por persona';
 parrafo3.classList.add('precio');
+//-----------------------------------------------
 
+parrafo3.onclick=function(){
+    nuevafuncion(1);
+}
+
+//-----------------------
 // crear el div...
 const info = document.createElement('div');
 info.classList.add('info');
@@ -38,3 +44,24 @@ contenedorCard.appendChild(info);
 // Insertarlo en el HTML...
 const contenedor = document.querySelector('.hacer .contenedor-cards');
 contenedor.appendChild(contenedorCard); // al inicio info
+
+/**
+ * El Event Bubbling tambien se puede prevenir por medio de una
+ * funcion, en esta seccion veremos como hacerlo 
+ * 
+ * La forma de hacerlo es agregandole una funcion mientras creamos
+ * el contenido HTML con JS
+ */
+
+function nuevafuncion(id){
+    console.log("Desde nueva Funcion",id)
+}
+
+/**
+ * En caso de que requiera pasar parametros la sintaxis es distinta
+ * ya que si se ponen detro de la llamada nos invocara la funcion
+ * automaticamente.
+ * 
+ * Papara esto podemos hacerlo por medio de una funcion anonima
+ * o por medio de un arrow funcion.
+ */
